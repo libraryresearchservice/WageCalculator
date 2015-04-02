@@ -39,8 +39,10 @@ class wageCalculator {
 	public function calculate() {
 		$intervals = array('annually', 'hourly', 'monthly', 'weekly');
 		$this->wage = array(
-			'low'	=> array_fill_keys($this->intervals, false),
-			'high'	=> array_fill_keys($this->intervals, false),
+			'low'		=> array_fill_keys($this->intervals, false),
+			'high'		=> array_fill_keys($this->intervals, false),
+			'hours'		=> $this->hours,
+			'interval'	=> $this->interval
 		);
 		foreach ( array('low', 'high') as $v ) {
 			if ( !$this->{$v} ) {
