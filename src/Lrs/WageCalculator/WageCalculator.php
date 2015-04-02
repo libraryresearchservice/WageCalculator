@@ -21,7 +21,6 @@ class wageCalculator {
 	protected $wage;
 	
 	public function __construct($low, $high, $interval, $hours) {
-		
 		$this->low = $this->filter($low);
 		$this->high = $this->filter($high);
 		$this->hours = $this->filter($hours);
@@ -33,7 +32,7 @@ class wageCalculator {
 		return $this->wage;	
 	}
 	
-	public function filter($val) {
+	protected function filter($val) {
 		return abs(preg_replace('/[^0-9\.]/', '', $val));	
 	}
 	
