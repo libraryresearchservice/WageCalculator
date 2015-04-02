@@ -15,10 +15,10 @@ class WageCalculator {
 			$this->wage = array_merge($this->wage, $params);
 		}
 		$default = array_fill_keys(array(
-		  'hours_per_week',
-		  'low_hourly',
-		  'low_weekly',
-		  'low_monthly',
+			'hours_per_week',
+			'low_hourly',
+			'low_weekly',
+			'low_monthly',
 			'low_annually',
 			'high_hourly',
 			'high_weekly',
