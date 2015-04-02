@@ -20,7 +20,7 @@ class wageCalculator {
 	protected $intervals = array('annually', 'hourly', 'monthly', 'weekly');
 	protected $wage;
 	
-	public function __construct($low, $high, $interval, $hours) {
+	public function __construct($low, $high, $hours, $interval) {
 		$this->low = $this->filter($low);
 		$this->high = $this->filter($high);
 		$this->hours = $this->filter($hours);
