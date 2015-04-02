@@ -1,0 +1,19 @@
+{
+    "name": "lrs/wagecalculator",
+    "description": "",
+    "authors": [
+        {
+            "name": "Lrs",
+            "email": "lrs@lrs.org"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Lrs\\WageCalculator\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
